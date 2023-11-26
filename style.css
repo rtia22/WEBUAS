@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.head{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+.wrapper{
+    height: 60px;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.2), -2px 0px 4px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.2), 0px -2px 4px rgba(0, 0, 0, 0.2);
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.navigation li a{
+    margin: 80px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.navigation li a:hover{
+    color: crimson;
+}
+.body{
+    background-color: white;
+}
+.productlist{
+    display: flex;
+    height: 100;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.garis{
+    height: 10px;
+    width: 100%;
+}
+.garis > hr{
+    margin-left: 47%;
+    width: 70px;
+    border-top: 4px solid #000;
+    margin-top: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 60px;
+    align-items: center;
+    grid-gap: 30px;
+}
+.img{
+    object-fit: cover;
+}
+.grid > article{
+    box-shadow:  2px 2px 2px 2px black;
+    border-radius: 10px;
+    text-align: center;
+    background: whitesmoke;
+    width: 200px;
+    transition: trasnfrom;
+
+}
+.grid > article > img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.grid > article:hover{
+    transform: rotase(10deg);
+    transform: scale(1.1);
+}
+@media (max-width:1000px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:500px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* home */
+
+.welcome-container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    color: #333; /* Warna teks judul */
+}
+
+p {
+    font-size: 18px;
+    color: #666; /* Warna teks paragraf */
+}
+.shop-now-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: rgb(130, 130, 248); /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* CONTACT */
+.complaint-form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.complaint-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.complaint-form input[type="text"],
+.complaint-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.complaint-form textarea {
+    height: 100px;
+}
+
+.complaint-form button {
+    background-color:rgb(130, 130, 248);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.complaint-form button:hover {
+    background-color: #0056b3;
+}
+/* kategori */
+.container {
+    text-align: center;
+}
+
+#category-list {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+#category-list button {
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#category-list button:hover {
+    background-color: #eee;
+}
+
+
+/* wa */
+.wa_btn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    color: green;
+  
+}
+.wa_btn i {
+    font-size: 70px;
+}
+
+section {
+    margin: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

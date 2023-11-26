@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS WEB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <nav class="wrapper">
+            <ul class="navigation">
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="hal1.html">PRODUCT</a></li>
+                <li><a href="hal2.html">CATEGORY</a></li>
+                <li><a href="hal3.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="body">
+        <div class="productlist">
+            <h2>Contact Pengaduan</h2>
+        </div>
+        <div class="garis">
+            <hr>
+        </div>
+    </div>
+    <div class="complaint-form">
+    <form action="proses_pengaduan.php" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="pesan">Pesan Pengaduan:</label>
+        <textarea id="pesan" name="pesan" required></textarea>
+
+        <button type="submit">Kirim Pengaduan</button>
+    </form>
+</div>
+
+    <footer>
+        <a class="wa_btn" href="https://wa.me/6285252318630" target="_blank">
+            <i class="fab fa-whatsapp-square"></i>
+        </a>
+
+        <p> Rahmatia D0222304</p>
+    </footer>
+</body>
+</html>
